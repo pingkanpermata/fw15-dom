@@ -24,30 +24,35 @@
           </div>
         </div>
         <div class="text-2xl font-semibold tracking-[1px] text-[#373A42]">Sign Up</div>
-        <div class="text-sm font-semibold tracking-[0.5px] text-[#373A42] mb-5">Already have an account? <a class="text-[#FB1494] hover:text-[#000000]" href="SignIn.html">Log In</a></div>
-        <form class="flex flex-col gap-3">
+        <div class="text-sm font-semibold tracking-[0.5px] text-[#373A42] mb-8">Already have an account? <a class="text-[#FB1494] hover:text-[#000000]" href="SignIn.html">Log In</a></div>
+        <form class="cust-form-signup flex flex-col gap-3.5">
           <div class="text-sm tracking[0.5]">
-            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="text" name="" placeholder="Username" />
+            <input class="cust-username-input w-full h-14 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="text" name="username" placeholder="Username" />
+          </div>
+          <div class="cust-message-for-username hidden items-center justify-start text-xs text-red-500 font-medium tracking[0.5]">
           </div>
           <div class="text-sm tracking[0.5]">
-            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="email" name="" placeholder="Email" />
+            <input class="cust-email-input w-full h-14 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="text" name="email" placeholder="Email" />
           </div>
+          <div class="cust-message-for-email hidden items-center justify-start text-xs text-red-500 font-medium tracking[0.5]"></div>
           <div class="text-sm tracking[0.5] relative">
-            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="" placeholder="Password" />
-            <div class="container-icon-eye absolute top-3 right-4 text-[#4c3f91]"><i class="eye-icon fa-eye"></i></div>
+            <input class="cust-pass-input w-full h-14 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="password" placeholder="Password" />
+            <div class="cust-container-icon-eye absolute top-4 right-4 text-[#4c3f91]"><i class="cust-eye-icon fa fa-eye fa-lg"></i></div>
           </div>
+          <div class="cust-message-for-password hidden items-center justify-start text-xs text-red-500 font-medium tracking[0.5]"></div>
           <div class="text-sm tracking[0.5] relative">
-            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="" placeholder="Confirm Password" />
-            <div class="container-icon-eye2 absolute top-3 right-4 text-[#4c3f91]"><i class="eye-icon2 fa-eye"></i></div>
+            <input class="cust-pass-input2 w-full h-14 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="password2" placeholder="Confirm Password" />
+            <div class="cust-container-icon-eye2 absolute top-4 right-4 text-[#4c3f91]"><i class="cust-eye-icon2 fa fa-eye fa-lg"></i></div>
+          </div>
+          <div class="cust-message-for-password2 hidden items-center justify-start text-xs text-red-500 font-medium tracking[0.5]"></div>
+          <div class="cust-message-wrong-input hidden items-center justify-center text-sm text-red-500 font-medium tracking[0.5]">
           </div>
           <div class="flex items-center gap-3.5">
-            <div><input type="checkbox" name="" id="" /></div>
-            <div class="self-end text-sm text-[#FB1494] font-semibold tracking[0.5] my-2">Accept terms and condition</div>
+            <div><input type="checkbox" name="chkBox" id="chkBox" /></div>
+            <label for="chkBox" class="self-end text-sm text-[#373A42] font-medium tracking[0.5] my-3">Accept terms and condition</label>
           </div>
           <div>
-            <button type="submit" class="shadow-for-all-button w-full h-14 rounded-xl bg-[#F23F9F] hover:bg-[#FB1494] text-base font-semibold tracking-[1px] text-white">
-              <a href="SignIn.html">Sign Up</a>
-            </button>
+            <button type="submit" name="buttonSubmit" id="buttonSubmit" class="shadow-for-all-button w-full h-14 rounded-xl bg-[#FB1494] text-base font-semibold tracking-[1px] text-white">Sign Up</button>
           </div>
         </form>
       </div>
@@ -56,6 +61,6 @@
   <script>
     feather.replace();
   </script>
-  <script type="module" src="./assets/js/script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
